@@ -2,7 +2,7 @@
   <div class="app_wrapper">
     <header>
       <h1>Sydney's Dashboard</h1>
-      </header>
+    </header>
     <div class="content">
       <aside>
         <li><a>Overview</a></li>
@@ -10,7 +10,7 @@
         <li><a>Best Sellers</a></li>
       </aside>
       <main>
-        <small><span class="blue">dashboard</span>/Overview</small>
+        <small><span class="blue">dashboard</span> / Overview</small>
         <Overview />
       </main>
     </div>
@@ -18,18 +18,18 @@
 </template>
 
 <script>
-import Overview from './views/Overview.vue'
+import Overview from "./views/Overview.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Overview
-  }
+    Overview,
+  },
 };
 </script>
 
 <style>
 .app_wrapper {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -38,6 +38,23 @@ header {
   background: white;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+}
 
+.content {
+  display: flex;
+}
+
+aside {
+  flex: 1;
+  border-right: 1px solid #ddd;
+  min-height: 100vh;
+}
+main {
+  flex: 3;
+  padding: 1rem;
+}
+
+.blue {
+  color: rgb(25, 149, 243);
 }
 </style>
