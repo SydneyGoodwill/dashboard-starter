@@ -1,10 +1,29 @@
 <template>
-  <div class="app_wrapper"></div>
+  <div class="app_wrapper">
+    <header>
+      <h1>Sydney's Dashboard</h1>
+      </header>
+    <div class="content">
+      <aside>
+        <li><a>Overview</a></li>
+        <li><a>Orders</a></li>
+        <li><a>Best Sellers</a></li>
+      </aside>
+      <main>
+        <small><span class="blue">dashboard</span>/Overview</small>
+        <Overview />
+      </main>
+    </div>
+  </div>
 </template>
 
 <script>
+import Overview from './views/Overview.vue'
 export default {
   name: 'App',
+  components: {
+    Overview
+  }
 };
 </script>
 
@@ -14,5 +33,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+}
+header {
+  background: white;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+
 }
 </style>
