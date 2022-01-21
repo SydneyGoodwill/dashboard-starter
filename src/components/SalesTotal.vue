@@ -1,4 +1,6 @@
 <template>
-  <article class>"stats"</article>
-  <h4>Total sales:</h4>
+  <article class="stats">
+    <h4>Total sales:</h4>
+    <slot></slot>
+  </article>
 </template>
