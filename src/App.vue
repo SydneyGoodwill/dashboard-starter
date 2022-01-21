@@ -29,7 +29,7 @@ export default {
 
 <style>
 .app_wrapper {
-  font-family: "Roboto", sans-serif;
+  font-family: Avenir, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -38,6 +38,10 @@ header {
   background: white;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  font-size: 1.4rem;
 }
 
 .content {
@@ -56,5 +60,20 @@ main {
 
 .blue {
   color: rgb(25, 149, 243);
+}
+
+h4 {
+  margin: 0;
+  padding-bottom: 1.6rem;
+}
+
+.light-text {
+  font-weight: 300;
+}
+
+.stats {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
 }
 </style>
